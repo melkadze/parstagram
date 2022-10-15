@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
             if error == nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-                print(error)
+                print(error!)
             }
         }
     }
@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
             if error == nil {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
-                print(error)
+                print(error!)
             }
         }
     }
