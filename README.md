@@ -25,4 +25,6 @@ Here's a walkthrough of implemented user stories:
 
 Please allow for up to one minute for the gif to load -- it will appear blank until then.
 
-<img src='./demo' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Note: the password field inputs are not displayed in the demo as it is tagged as a secure field, and iOS does not allow for screen recording of them for security reasons.
+
+<img src='./demo' title='Video Walkthrough' width='400' alt='Video Walkthrough' />
