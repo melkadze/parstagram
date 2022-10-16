@@ -77,7 +77,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="447" id="vZt-IO-ARc" customClass="PostTableViewCell" customModule="Parstagram" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="447" id="vZt-IO-ARc" customClass="PostTableViewCell" customModule="Parstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="447"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vZt-IO-ARc" id="JvV-54-rjf">
@@ -121,6 +121,39 @@
                                             <outlet property="captionLabel" destination="9yI-RW-eyy" id="eng-uo-Hw8"/>
                                             <outlet property="photoView" destination="7Cb-T7-1an" id="U0r-Xc-nhU"/>
                                             <outlet property="usernameLabel" destination="pid-SQ-JBm" id="Ddf-Nc-XLY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTableViewCell" rowHeight="65" id="9hn-qe-N1B" customClass="CommentTableViewCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="497" width="393" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9hn-qe-N1B" id="WQr-PJ-H0y">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-XO-aSw">
+                                                    <rect key="frame" x="20" y="11" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW3-c1-tu0">
+                                                    <rect key="frame" x="20" y="33" width="74.666666666666671" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bVF-XO-aSw" firstAttribute="leading" secondItem="WQr-PJ-H0y" secondAttribute="leading" constant="20" id="IDn-Ib-MYD"/>
+                                                <constraint firstItem="uW3-c1-tu0" firstAttribute="top" secondItem="bVF-XO-aSw" secondAttribute="bottom" constant="1" id="IFd-73-E8K"/>
+                                                <constraint firstItem="bVF-XO-aSw" firstAttribute="top" secondItem="WQr-PJ-H0y" secondAttribute="top" constant="11" id="NfB-Oj-lxs"/>
+                                                <constraint firstItem="uW3-c1-tu0" firstAttribute="leading" secondItem="WQr-PJ-H0y" secondAttribute="leading" constant="20" id="fSm-2d-1SN"/>
+                                                <constraint firstAttribute="bottom" secondItem="uW3-c1-tu0" secondAttribute="bottom" constant="11.67" id="pDy-8e-uYW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="uW3-c1-tu0" id="53p-lI-G3u"/>
+                                            <outlet property="nameLabel" destination="bVF-XO-aSw" id="014-qP-fh2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
